@@ -1,0 +1,25 @@
+USE dataset;
+
+-- Count of objects 
+SELECT COUNT(*) FROM dataset;
+
+-- List all the objects in this database
+SELECT * FROM dataset;
+
+-- List all objects in alphabetical order
+SELECT * FROM dataset ORDER BY Name;
+
+
+
+SELECT object1, object2 FROM dataset;
+
+SELECT object1 AS STH, object2 AS STH2 FROM dataset;
+
+SELECT continuous_variable / 1000 AS 'Continuous_variable (1000s)' FROM dataset;
+
+SELECT object1, object2 FROM dataset ORDER BY object2 DESC;
+
+SELECT object1, object2, object3 FROM dataset ORDER BY object1 DESC, object2, object3;
+
+
+SELECT object1, object2, object3 FROM dataset WHERE Population > 100000000 ORDER BY Population DESC;
